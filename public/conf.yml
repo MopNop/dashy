@@ -1,12 +1,13 @@
-pageInfo:
-  title: hi
-  description: ''
-  footerText: ''
 appConfig:
   theme: thebe
   layout: horizontal
   iconSize: medium
   language: en
+pageInfo:
+  title: hi
+  description: ''
+  navLinks: []
+  footerText: ''
 sections:
   - name: Links
     icon: ''
@@ -50,5 +51,13 @@ sections:
       cols: 1
       collapsed: false
       hideForGuests: false
-    items: []
-    filteredItems: []
+    items:
+      - &ref_3
+        title: Ublock
+        description: embed
+        id: 0_609_ublock
+        - type: iframe
+          options:
+            url: https://drhyperion451.github.io/does-uBO-bypass-yt/
+    filteredItems:
+      - *ref_3
