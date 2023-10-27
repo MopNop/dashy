@@ -6,4 +6,49 @@ appConfig:
   theme: thebe
   layout: horizontal
   iconSize: medium
-sections: []
+  language: en
+sections:
+  - name: Links
+    icon: ''
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - &ref_0
+        title: YouTube
+        description: videos
+        icon: si-youtube
+        url: youtube.com
+        target: sametab
+        id: 0_513_youtube
+      - &ref_1
+        title: Github
+        description: github
+        icon: si-github
+        url: https://github.com
+        target: sametab
+        id: 1_513_github
+      - &ref_2
+        title: Vercel
+        description: thats what this is deployed to
+        icon: si-vercel
+        url: https://vercel.app
+        target: sametab
+        id: 2_513_vercel
+    filteredItems:
+      - *ref_0
+      - *ref_1
+      - *ref_2
+  - name: Vercel
+    icon: si-vercel
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items: []
+    filteredItems: []
